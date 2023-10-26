@@ -3,7 +3,7 @@ public class Player {
 
     private String name;
     private int score;
-    private int winStreak;
+    public int winStreak;
 
 
     public Player(String name) {
@@ -27,10 +27,15 @@ public class Player {
         score++;
     }
 
+    public void incrementScore2() {
+        score += 2;
+    }
+
 
     public void reset() {
         score = 0;
     }
     public int getWinStreak() { return winStreak; }
     public void incrementWinStreak() { winStreak++; }
+    public void resetWinStreak() { winStreak = 0; }
 }
